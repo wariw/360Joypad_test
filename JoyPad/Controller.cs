@@ -65,22 +65,18 @@ namespace JoyPad
             {
                 this.joystick.Poll();
                 var datas = joystick.GetBufferedData();
-
-
                 bool[] tea = this.joystick.GetCurrentState().GetButtons();
                 int[] teb = { this.joystick.GetCurrentState().X, this.joystick.GetCurrentState().Y, this.joystick.GetCurrentState().Z };
                 string[] Przyciski = { "A", "B", "X", "Y", "LB", "RB", "back", "start", "L", "R" };
                 string[] przyciski = new string[10];
-
-                
             }
         }
 
         public bool[] Buttons()
         {
             this.joystick.Poll();
-            bool[] tea = this.joystick.GetCurrentState().GetButtons();
-            return tea;
+            bool[] buttons = this.joystick.GetCurrentState().GetButtons();
+            return buttons;
         }
     }
 
@@ -120,8 +116,7 @@ namespace JoyPad
 
         public SlimDX.XInput.State State()
         {
-            SlimDX.XInput.State tea = this.joystick.GetState();
-            return tea;
+            return this.joystick.GetState();
         }
 
         public bool[] Buttons()

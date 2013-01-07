@@ -88,6 +88,10 @@ namespace JoyPad
             Graphics g = e.Graphics; // Tworzysz zmienną grafiki - nazywamy ją na przykład g.
             g.FillEllipse(lb, 107 + lsliderX, 125 + lsliderY, 20, 20); // Wypełniasz elipsę za pomocą pędzla.
             g.FillEllipse(rb, 305 + rsliderX, 206 + rsliderY, 20, 20);
+            g.FillEllipse(rb, 305 + rsliderX*2, 206 + rsliderY*2, 20, 20);
+            g.FillEllipse(rb, 305 + rsliderX*3, 206 + rsliderY*3, 20, 20);
+            g.FillEllipse(rb, 305 + rsliderX * 5, 206 + rsliderY * 5, 20, 20); 
+
 
             SolidBrush[] brushf = {new SolidBrush(Color.FromArgb(255,27,27,27)), new SolidBrush(Color.FromArgb(255,27,27,27)), new SolidBrush(Color.FromArgb(255,27,27,27)), new SolidBrush(Color.FromArgb(255,27,27,27)), new SolidBrush(Color.FromArgb(255,27,27,27))};
 
