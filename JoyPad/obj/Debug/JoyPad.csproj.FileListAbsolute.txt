@@ -1,0 +1,15 @@
+c:\users\wariw\documents\visual studio 2012\Projects\JoyPad\JoyPad\bin\Debug\JoyPad.exe.config
+c:\users\wariw\documents\visual studio 2012\Projects\JoyPad\JoyPad\obj\Debug\JoyPad.csprojResolveAssemblyReference.cache
+c:\users\wariw\documents\visual studio 2012\Projects\JoyPad\JoyPad\obj\Debug\JoyPad.Properties.Resources.resources
+c:\users\wariw\documents\visual studio 2012\Projects\JoyPad\JoyPad\obj\Debug\JoyPad.csproj.GenerateResource.Cache
+c:\users\wariw\documents\visual studio 2012\Projects\JoyPad\JoyPad\bin\Debug\JoyPad.exe
+c:\users\wariw\documents\visual studio 2012\Projects\JoyPad\JoyPad\bin\Debug\JoyPad.pdb
+c:\users\wariw\documents\visual studio 2012\Projects\JoyPad\JoyPad\obj\Debug\JoyPad.exe
+c:\users\wariw\documents\visual studio 2012\Projects\JoyPad\JoyPad\obj\Debug\JoyPad.pdb
+c:\users\wariw\documents\visual studio 2012\Projects\JoyPad\JoyPad\bin\Debug\SlimDX.dll
+c:\users\wariw\documents\visual studio 2012\Projects\JoyPad\JoyPad\bin\Debug\SlimDX.pdb
+c:\users\wariw\documents\visual studio 2012\Projects\JoyPad\JoyPad\bin\Debug\SlimDX.xml
+c:\users\wariw\documents\visual studio 2012\Projects\JoyPad\JoyPad\obj\Debug\JoyPad.Form1.resources
+C:\Users\wariw\projects\JoyPad\JoyPad\bin\Debug\JoyPad.exe.config
+C:\Users\wariw\projects\JoyPad\JoyPad\obj\Debug\JoyPad.exe
+C:\Users\wariw\projects\JoyPad\JoyPad\obj\Debug\JoyPad.pdb
