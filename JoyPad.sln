@@ -4,9 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoyPad", "JoyPad\JoyPad.csproj", "{B986B657-A0C3-4091-AEE4-FFC7BC7FF483}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{06157218-92AD-48F0-98F7-14493F351EAF}"
-	ProjectSection(SolutionItems) = preProject
-		SimpleJoystick.cs = SimpleJoystick.cs
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
