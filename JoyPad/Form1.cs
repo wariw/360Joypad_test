@@ -95,7 +95,8 @@ namespace JoyPad
 
             SolidBrush[] brushf = {new SolidBrush(Color.FromArgb(255,27,27,27)), new SolidBrush(Color.FromArgb(255,27,27,27)), new SolidBrush(Color.FromArgb(255,27,27,27)), new SolidBrush(Color.FromArgb(255,27,27,27)), new SolidBrush(Color.FromArgb(255,27,27,27))};
 
-            g.FillEllipse(new SolidBrush(Color.FromArgb(255, 239, 189, 23)), 305, 206, 20, 20);
+            if (buttons[3] == true) brushf[0].Color = Color.Green; else brushf[0].Color = Color.FromArgb(255, 239, 189, 23);
+            g.FillEllipse(brushf[0], 372, 83, 30, 30);
 
             g.FillRectangle(ls, 90, 50, sliders[4] / 3, 10);
             g.FillRectangle(rs, 330, 50, sliders[5] / 3, 10);

@@ -29,16 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.start = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.A = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.B = new System.Windows.Forms.Label();
-            this.X = new System.Windows.Forms.Label();
-            this.Y = new System.Windows.Forms.Label();
-            this.back = new System.Windows.Forms.Label();
-            this.LB = new System.Windows.Forms.Label();
-            this.RB = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.rMotorSlider = new System.Windows.Forms.TrackBar();
             this.lMotorSlider = new System.Windows.Forms.TrackBar();
@@ -52,15 +44,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.padPicture)).BeginInit();
             this.SuspendLayout();
             // 
-            // start
-            // 
-            this.start.AutoSize = true;
-            this.start.Location = new System.Drawing.Point(513, 144);
-            this.start.Name = "start";
-            this.start.Size = new System.Drawing.Size(27, 13);
-            this.start.TabIndex = 0;
-            this.start.Text = "start";
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(18, 118);
@@ -71,75 +54,11 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // A
-            // 
-            this.A.AutoSize = true;
-            this.A.Location = new System.Drawing.Point(602, 183);
-            this.A.Name = "A";
-            this.A.Size = new System.Drawing.Size(14, 13);
-            this.A.TabIndex = 2;
-            this.A.Text = "A";
-            // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // B
-            // 
-            this.B.AutoSize = true;
-            this.B.Location = new System.Drawing.Point(638, 140);
-            this.B.Name = "B";
-            this.B.Size = new System.Drawing.Size(14, 13);
-            this.B.TabIndex = 4;
-            this.B.Text = "B";
-            // 
-            // X
-            // 
-            this.X.AutoSize = true;
-            this.X.Location = new System.Drawing.Point(565, 140);
-            this.X.Name = "X";
-            this.X.Size = new System.Drawing.Size(14, 13);
-            this.X.TabIndex = 6;
-            this.X.Text = "X";
-            // 
-            // Y
-            // 
-            this.Y.AutoSize = true;
-            this.Y.BackColor = System.Drawing.Color.Gold;
-            this.Y.Location = new System.Drawing.Point(602, 104);
-            this.Y.Name = "Y";
-            this.Y.Size = new System.Drawing.Size(14, 13);
-            this.Y.TabIndex = 5;
-            this.Y.Text = "Y";
-            // 
-            // back
-            // 
-            this.back.AutoSize = true;
-            this.back.Location = new System.Drawing.Point(398, 145);
-            this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(31, 13);
-            this.back.TabIndex = 7;
-            this.back.Text = "back";
-            // 
-            // LB
-            // 
-            this.LB.AutoSize = true;
-            this.LB.Location = new System.Drawing.Point(342, 37);
-            this.LB.Name = "LB";
-            this.LB.Size = new System.Drawing.Size(20, 13);
-            this.LB.TabIndex = 8;
-            this.LB.Text = "LB";
-            // 
-            // RB
-            // 
-            this.RB.AutoSize = true;
-            this.RB.Location = new System.Drawing.Point(580, 41);
-            this.RB.Name = "RB";
-            this.RB.Size = new System.Drawing.Size(22, 13);
-            this.RB.TabIndex = 9;
-            this.RB.Text = "RB";
             // 
             // label1
             // 
@@ -219,15 +138,7 @@
             this.ClientSize = new System.Drawing.Size(734, 422);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.RB);
-            this.Controls.Add(this.LB);
-            this.Controls.Add(this.back);
-            this.Controls.Add(this.X);
-            this.Controls.Add(this.Y);
-            this.Controls.Add(this.B);
-            this.Controls.Add(this.A);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.start);
             this.Controls.Add(this.padPicture);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -244,16 +155,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label start;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label A;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label B;
-        private System.Windows.Forms.Label X;
-        private System.Windows.Forms.Label Y;
-        private System.Windows.Forms.Label back;
-        private System.Windows.Forms.Label LB;
-        private System.Windows.Forms.Label RB;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TrackBar rMotorSlider;
         private System.Windows.Forms.TrackBar lMotorSlider;
