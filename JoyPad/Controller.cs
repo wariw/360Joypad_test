@@ -123,7 +123,6 @@ namespace JoyPad
             string[] Battery = new string[2];
             Battery[0] = this.joystick.GetBatteryInformation(battery).Type.ToString();
             Battery[1] = this.joystick.GetBatteryInformation(battery).Level.ToString();
-            
             return Battery;
         }
 

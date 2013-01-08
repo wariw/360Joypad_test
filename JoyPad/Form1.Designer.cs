@@ -39,6 +39,7 @@
             this.rMotorLabel = new System.Windows.Forms.Label();
             this.padPicture = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.PressedButtons = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.rMotorSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lMotorSlider)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -141,11 +142,21 @@
             this.label2.TabIndex = 19;
             this.label2.Text = "label2";
             // 
+            // PressedButtons
+            // 
+            this.PressedButtons.AutoSize = true;
+            this.PressedButtons.Location = new System.Drawing.Point(218, 397);
+            this.PressedButtons.Name = "PressedButtons";
+            this.PressedButtons.Size = new System.Drawing.Size(46, 13);
+            this.PressedButtons.TabIndex = 20;
+            this.PressedButtons.Text = "Buttons:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(734, 422);
+            this.Controls.Add(this.PressedButtons);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
@@ -153,7 +164,6 @@
             this.Controls.Add(this.padPicture);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.rMotorSlider)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lMotorSlider)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -176,6 +186,7 @@
         private System.Windows.Forms.Label rMotorLabel;
         private System.Windows.Forms.PictureBox padPicture;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label PressedButtons;
     }
 }
 
