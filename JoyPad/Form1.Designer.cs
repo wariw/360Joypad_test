@@ -38,6 +38,7 @@
             this.lMotorLabel = new System.Windows.Forms.Label();
             this.rMotorLabel = new System.Windows.Forms.Label();
             this.padPicture = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.rMotorSlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lMotorSlider)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -63,7 +64,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(128, 123);
+            this.label1.Location = new System.Drawing.Point(15, 187);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 12;
@@ -131,11 +132,21 @@
             this.padPicture.TabStop = false;
             this.padPicture.Paint += new System.Windows.Forms.PaintEventHandler(this.padPicture_Paint);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(15, 200);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "label2";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(734, 422);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
@@ -164,6 +175,7 @@
         private System.Windows.Forms.Label lMotorLabel;
         private System.Windows.Forms.Label rMotorLabel;
         private System.Windows.Forms.PictureBox padPicture;
+        private System.Windows.Forms.Label label2;
     }
 }
 

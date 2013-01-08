@@ -14,8 +14,6 @@ namespace JoyPad
         public Guid joystickGuid;
         public Joystick joystick;
 
-        public delegate void EventHandler(object sender, EventArgs e);
-
         public ControllerU()
         {
             // Initialize DirectInput
@@ -82,28 +80,28 @@ namespace JoyPad
 
     public class ControllerX
     {
-        public UserIndex userIndex;
-        public SlimDX.XInput.Controller joystick;
+        private UserIndex userIndex;
+        private SlimDX.XInput.Controller joystick;
         private Vibration vibration;
         public bool _vibration
         {
             get
             {
-                if (vibration.LeftMotorSpeed == 0 && vibration.RightMotorSpeed == 0)
-                    return false;
-                else
-                    return true;
+                if (vibration.LeftMotorSpeed == 0 || vibration.RightMotorSpeed == 0) return false;
+                else return true;
             }
-            set {  } 
+            set { }
         }
 
         public ControllerX()
         {
             this.userIndex = new UserIndex();
 
-            // Instantiate the joystick
-            this.joystick = new SlimDX.XInput.Controller(userIndex);
+            //trzeba dać wyjątki gdy nie podłączony żaden pad :D
+//            foreach (var deviceInstance in SlimDX.XInput.get.GetDevices(SlimDX.DirectInput.DeviceType.Gamepad, DeviceEnumerationFlags.AllDevices))
+//                this.joystickGuid = deviceInstance.InstanceGuid;
 
+            this.joystick = new SlimDX.XInput.Controller(userIndex);
             this.vibration = new Vibration();
         }
 
@@ -119,19 +117,28 @@ namespace JoyPad
             return this.joystick.GetState();
         }
 
-        public bool[] Buttons()
+        public string[] StateBat()
+        {
+            BatteryDeviceType battery = new BatteryDeviceType();
+            string[] Battery = new string[2];
+            Battery[0] = this.joystick.GetBatteryInformation(battery).Type.ToString();
+            Battery[1] = this.joystick.GetBatteryInformation(battery).Level.ToString();
+            
+            return Battery;
+        }
+
+        public bool[] ButtonStateBool()
         {
             bool[] Buttons = new bool[14];
-            string[] przyciskiNazwy = { "A", "B", "X", "Y", "DPadUp", "DPadDown", "DPadLeft", "DPadRight", "LeftShoulder", "RightShoulder", "Back", "Start", "LeftThumb", "RightThumb" };
+            string[] buttonNames = { "A", "B", "X", "Y", "DPadUp", "DPadDown", "DPadLeft", "DPadRight", "LeftShoulder", "RightShoulder", "Back", "Start", "LeftThumb", "RightThumb" };
 
-            SlimDX.XInput.State tea = this.joystick.GetState();
-            string[] tst = tea.Gamepad.Buttons.ToString().Split(new string[] { ", " }, StringSplitOptions.None);
+            string[] buttonStateStrings = this.joystick.GetState().Gamepad.Buttons.ToString().Split(new string[] { ", " }, StringSplitOptions.None);
 
             for (int i = 0; i < 14; i++)
             {
-                for (int j = 0; j < tst.Length; j++)
+                for (int j = 0; j < buttonStateStrings.Length; j++)
                 {
-                    if (tst[j] == przyciskiNazwy[i])
+                    if (buttonStateStrings[j] == buttonNames[i])
                         Buttons[i] = true;
                 }
             }

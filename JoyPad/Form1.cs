@@ -39,7 +39,7 @@ namespace JoyPad
         {
 
             var state = x360.State();
-            buttons = x360.Buttons();
+            buttons = x360.ButtonStateBool();
 
             string[] przyciskiNazwy = { "A", "B", "X", "Y", "DPadUp", "DPadDown", "DPadLeft", "DPadRight", "LeftShoulder", "RightShoulder", "Back", "Start", "LeftThumb", "RightThumb" };
 
@@ -48,6 +48,8 @@ namespace JoyPad
             this.sliders = sliders;
             padPicture.Refresh();
 
+            label1.Text = "Type:" + x360.StateBat()[0];
+            label2.Text = "Battery: " + x360.StateBat()[1];
         }
 
         private void rMotorSlider_Scroll(object sender, EventArgs e)
