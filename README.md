@@ -1,2 +1,2 @@
-360Joypad_test :D
+360Joypad_test
 ==============
